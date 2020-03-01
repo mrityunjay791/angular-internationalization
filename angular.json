@@ -35,6 +35,8 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
+         
+               
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
@@ -51,6 +53,22 @@
                   "maximumError": "5mb"
                 }
               ]
+            },
+            "fr": {
+              "aot": true,
+              "outputPath": "dist/under-construction-fr/",
+              "i18nFile": "src/locale/messages.fr.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "fr",
+              "i18nMissingTranslation": "error"
+            },
+            "de": {
+              "aot": true,
+              "outputPath": "dist/under-construction-de/",
+              "i18nFile": "src/locale/messages.de.xlf",
+              "i18nFormat": "xlf",
+              "i18nLocale": "de",
+              "i18nMissingTranslation": "error"
             }
           }
         },
@@ -62,6 +80,12 @@
           "configurations": {
             "production": {
               "browserTarget": "AngularInternationalization:build:production"
+            },
+            "fr": {
+              "browserTarget": "AngularInternationalization:build:fr"
+            },
+            "de": {
+              "browserTarget": "AngularInternationalization:build:de"
             }
           }
         },
